@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    /* styles containers */
+    .wrapper {
+        @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+    }
+
+    .degradado {
+        @apply bg-gradient-to-b from-white/70 to-black/70;
+    }
+
+    .button-red {
+        @apply bg-Bright-Red text-Vary-Light-Gray block w-max 
+        py-4 px-12 rounded-full shadow-Bright-Red/30;
+    }
+
+    .footer-area {
+        grid-template-areas: 
+        "form" 
+        "navigation"
+        "social-media"
+        "logo"
+        "copy";
+    }
+
+    .footer-area-md {
+        grid-template-areas: 
+        "logo           navigation  form"
+        "social-media   navigation  copy"
+        ;
+    }
+}
